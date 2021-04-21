@@ -1,2 +1,3 @@
-server:
-  port: 9065
+spring:
+  profiles:
+    active: '@spring.profiles.active@'
