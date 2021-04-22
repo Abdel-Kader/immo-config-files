@@ -1,0 +1,6 @@
+spring:
+  profiles: prod
+server:
+  port: 9001
+application:
+  current-profile: prod

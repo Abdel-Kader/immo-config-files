@@ -1,0 +1,18 @@
+server:
+  port: 9001
+application:
+  current-profile: dev
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/cloud-test
+    username: postgres
+    password: admin
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
