@@ -1,0 +1,6 @@
+spring:
+  profiles: prod
+application:
+  current-profile: prod
+server:
+  port: 8761
