@@ -5,7 +5,7 @@ application:
 spring:
   profiles: dev
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/cloud-test
+    url: jdbc:postgresql://127.0.0.1:5432/geo-immo-user-service
     username: postgres
     password: admin
   jpa:
