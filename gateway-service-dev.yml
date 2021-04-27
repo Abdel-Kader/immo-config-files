@@ -4,3 +4,8 @@ server:
   port: 9190
 application:
   current-profile: dev
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
