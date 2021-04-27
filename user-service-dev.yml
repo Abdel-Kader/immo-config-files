@@ -15,4 +15,5 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: geoimmo
     generate-ddl: true
