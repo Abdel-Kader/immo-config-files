@@ -1,5 +1,16 @@
 spring:
   profiles: dev
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          "[/**]":
+            allowedOrigins: "http://localhost:4200/"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
 server:
   port: 9190
 application:
@@ -8,4 +19,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: '*'
+        include: "*"
