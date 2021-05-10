@@ -1,6 +1,19 @@
-spring:
-  profiles: prod
 server:
   port: 9001
 application:
   current-profile: prod
+spring:
+  profiles: prod
+  datasource:
+    url: jdbc:postgresql://160.155.242.114:50008/geoimmo_userdb
+    username: postgres
+    password: admin
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.spatial.dialect.postgis.PostgisDialect
+        default_schema: geoimmo
+    generate-ddl: true

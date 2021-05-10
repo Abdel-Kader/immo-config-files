@@ -1,11 +1,11 @@
 server:
-  port: 9001
+  port: 9002
 application:
-  current-profile: dev
+  current-profile: prod
 spring:
-  profiles: dev
+  profiles: prod
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/geoimmo_userdb
+    url: jdbc:postgresql://160.155.242.114:50008/geoimmo_promotiondb
     username: postgres
     password: admin
   jpa:
@@ -17,7 +17,3 @@ spring:
         dialect: org.hibernate.spatial.dialect.postgis.PostgisDialect
         default_schema: geoimmo
     generate-ddl: true
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
